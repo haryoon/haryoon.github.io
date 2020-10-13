@@ -1,0 +1,431 @@
+/* No margin on top of the page*/
+*, html {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+/*Header and About Me section*/
+body {
+	background-color: white;
+	font-family: 'Lato', sans-serif;
+}
+
+section:nth-of-type(1) {
+	background-image: url(soho.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: #FFFFFF;
+}
+/* ============================================ Navbar ============================================*/
+nav {
+ 	position: fixed;
+ 	width: 100%;
+ 	transition: all 0.5s;
+}
+
+nav.active{
+	background: black;
+	color: white;
+ 	transition: all 0.5s;
+}
+
+label.logo{
+	color: white;
+	font-size: 35px;
+	line-height: 80px;
+	font-weight: bold;
+	margin-left: 5%;
+}
+	@media (max-width: 768px){
+	label.logo{
+		font-size: 30px;
+		line-height: 80px;
+		margin-left: 5%;
+	}
+}
+
+nav ul {
+	float: right;
+	list-style-type: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	margin-right: 5%;
+}
+
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+}
+
+nav ul li a {
+	color: white;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-decoration-line: none;
+}
+	@media (max-width: 768px){
+	nav ul li a{
+    	font-size: 15px;
+	}
+}
+
+a:hover{
+	color: rgb(169,169,169);
+	transition: .5s;
+}
+
+.checkbtn {
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 5%;
+	cursor: pointer;
+	display: none;
+}
+
+#check {
+	display: none;
+}
+
+
+@media (max-width: 768px){
+	.checkbtn{
+    	display: block;
+	}
+	/*above it says display none... bc the hamburger doesn't show up on desktop width*/
+
+	ul{
+	    position: fixed;
+	    width: 100%;
+	    height: 100vh;
+	    background: black;
+	    top: 80px;
+	    left: -100%;
+	    padding: 0;
+	    text-align: center;
+	    transition: all .5s;
+	}
+
+	nav ul li{
+	    display: block;
+	    margin: 50px 0;
+	    line-height: 30px;
+	}
+  
+	nav ul li a{
+    	font-size: 20px;
+	}
+
+	a:hover,a.active{
+	    background: none;
+	    color: rgb(169,169,169);
+  	}
+
+	#check:checked ~ ul{
+    	left: 0;
+	}
+}
+/* ============================================ About Section ============================================*/
+
+#abouttext {
+	font-size: 21px;
+	display: grid;
+	grid-template-columns: 75%;
+	width: 90%;
+	margin: auto;
+	padding: 290px 0 190px 0;
+}
+	@media (max-width: 768px){
+	#abouttext {
+		font-size: 17px;
+		display: grid;
+		grid-template-columns: 85%;
+		width: 90%;
+		margin: auto;
+		padding: 220px 0 170px 0;
+	}
+}
+
+.aboutfont {
+	margin-top:20px;
+	margin-bottom:10px;
+}
+	@media (max-width: 768px){
+	.aboutfont {
+		margin-top:17px;
+		margin-bottom:7px;
+	}
+}
+
+.greenb {
+	background-color: rgba(51,170,51,.73);
+}
+
+@media (max-width: 768px){
+	#portfoliosection {
+		margin-bottom: 100px;
+	}
+}
+
+/*spacing in between header/about me, portfolio, and to connect with me sections*/
+.sectionspacing {
+	margin-top: 85px;
+	margin-bottom: 40px;
+}
+	@media (max-width: 768px){
+	.sectionspacing {
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+}
+
+#portfolioheader {
+	font-size: 27px;
+	width: 90%;
+	margin: auto;
+}
+	@media (max-width: 768px){
+	#portfolioheader {
+		font-size: 25px;
+		width: 90%;
+		margin: auto;
+	}
+}
+
+/*old stuff*/
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+  	grid-auto-rows: minmax(100px, auto);
+	margin: auto;
+	width: 90%;
+}
+
+.one {
+	grid-column: 1;
+	grid-row: 1;
+	background-color: #FFFFFF;
+	border: #333 1px solid;
+}
+
+.two { 
+	grid-column: 2;
+	grid-row: 1;
+	background-color: #FFFFFF;
+	border: #333 1px solid;
+}
+
+.three {
+	grid-column: 3;
+	grid-row: 1;
+	background-color: #FFFFFF;
+	border: #333 1px solid;
+}
+
+.four {
+	grid-column: 1;
+	grid-row: 2;
+	background-color: #FFFFFF;
+	border: #333 1px solid;
+}
+
+.five {
+	grid-column: 2;
+	grid-row: 2;
+	background-color: #FFFFFF;
+	border: #333 1px solid;
+}
+
+@media (max-width: 968px){
+	.wrapper {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 15px;
+	  	grid-auto-rows: minmax(100px, auto);
+		margin: auto;
+		width: 90%;
+	}
+
+	.one {
+		grid-column: 1;
+		grid-row: 1;
+		background-color: #FFFFFF;
+		border: #333 1px solid;
+	}
+
+	.two { 
+		grid-column: 2;
+		grid-row: 1;
+		background-color: #FFFFFF;
+		border: #333 1px solid;
+	}
+
+	.three {
+		grid-column: 1;
+		grid-row: 2;
+		background-color: #FFFFFF;
+		border: #333 1px solid;
+	}
+
+	.four {
+		grid-column: 2;
+		grid-row: 2;
+		background-color: #FFFFFF;
+		border: #333 1px solid;
+	}
+
+	.five {
+		grid-column: 1;
+		grid-row: 3;
+		background-color: #FFFFFF;
+		border: #333 1px solid;
+	}
+	}
+
+@media (max-width: 768px){
+		.wrapper {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-gap: 20px;
+		  	grid-auto-rows: minmax(100px, auto);
+			color: black;
+			margin: auto;
+			width: 90%;
+		}
+
+		.one {
+			grid-column: 1;
+			grid-row: 1;
+			background-color: #FFFFFF;
+			border: #333 1px solid;
+		}
+
+		.two { 
+			grid-column: 1;
+			grid-row: 2;
+			background-color: #FFFFFF;
+			border: #333 1px solid;
+		}
+
+		.three {
+			grid-column: 1;
+			grid-row: 3;
+			background-color: #FFFFFF;
+			border: #333 1px solid;
+		}
+
+		.four {
+			grid-column: 1;
+			grid-row: 4;
+			background-color: #FFFFFF;
+			border: #333 1px solid;
+		}
+
+		.five {
+			grid-column: 1;
+			grid-row: 5;
+			background-color: #FFFFFF;
+			border: #333 1px solid;
+		}
+}
+
+
+.projectname {
+	font-size: 25px;
+	padding: 13px 0 0 18px;
+}
+	@media (max-width: 768px){
+	.projectname {
+		font-size: 20px;
+		padding: 13px 0 0 18px;
+	}
+}
+
+.projectdescription {
+	font-size: 18px;
+	padding: 10px 15px 18px 0;
+}
+	@media (max-width: 768px){
+	.projectdescription {
+		font-size: 15px;
+		padding: 10px 15px 18px 0;
+	}
+}
+
+.projectbutton {
+	margin: 0 0 19px 15px;
+	display: block;
+	background-color: white;
+	font-size: 20px;
+	border-style: none;
+	padding: 7px;
+}
+	@media (max-width: 768px){
+	.projectbutton {
+		margin: 0 0 19px 15px;
+		font-size: 18px;
+		border-style: none;
+		padding: 7px;
+	}
+}
+
+.projectbutton:hover {
+	color: #0147fc;
+}
+
+/*To Connect with me Section*/
+section:nth-of-type(3) {
+	background-color: black;
+	color: #FFFFFF;
+}
+
+#connectwithmerest {
+	width: 90%;
+	margin: auto;
+}
+
+#connectwithmeheader {
+	font-size: 27px;
+	margin-top: 80px;
+	margin-bottom: 30px;
+	padding-top: 40px;
+}
+	@media (max-width: 768px){
+	#connectwithmeheader {
+		font-size: 25px;
+		margin-top: 80px;
+		margin-bottom: 30px;
+		padding-top: 40px;
+	}
+}
+
+.socialicons {
+	margin: 35px 0 0 25px;
+	color: white;
+}
+
+.socialicons:hover {
+	color: #0147fc;
+	transition: .3s;
+}
+
+/*footer section*/
+footer {
+	font-size: 12px;
+	text-align: center;
+	margin-top: 90px;
+	padding-bottom: 5px;
+}
+	@media (max-width: 768px){
+	footer {
+		font-size: 10px;
+		text-align: center;
+		margin-top: 90px;
+		padding-bottom: 5px;
+	}
+}

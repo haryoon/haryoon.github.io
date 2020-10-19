@@ -17,25 +17,28 @@ section:nth-of-type(1) {
 	background-position: center;
 	color: #FFFFFF;
 }
+
 /* ============================================ Navbar ============================================*/
 nav {
  	position: fixed;
  	width: 100%;
- 	transition: all 0.5s;
+	transition: all 0.5s;
+	background: black;
 }
 
-nav.active{
+/* // commented out bc scroll not working yet :( */
+/* nav.active{
 	background: black;
 	color: white;
- 	transition: all 0.5s;
-}
+} */
 
 label.logo{
 	color: white;
 	font-size: 35px;
 	line-height: 80px;
-	font-weight: bold;
 	margin-left: 5%;
+	letter-spacing: 5px;
+	cursor: pointer;
 }
 	@media (max-width: 768px){
 	label.logo{
@@ -136,7 +139,7 @@ a:hover{
 	grid-template-columns: 75%;
 	width: 90%;
 	margin: auto;
-	padding: 290px 0 190px 0;
+	padding: 320px 0 180px 0;
 }
 	@media (max-width: 768px){
 	#abouttext {
@@ -145,7 +148,7 @@ a:hover{
 		grid-template-columns: 85%;
 		width: 90%;
 		margin: auto;
-		padding: 220px 0 170px 0;
+		padding: 270px 0 170px 0;
 	}
 }
 

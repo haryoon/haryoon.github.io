@@ -139,7 +139,7 @@ a:hover{
 	grid-template-columns: 75%;
 	width: 90%;
 	margin: auto;
-	padding: 320px 0 180px 0;
+	padding: 320px 0 230px 0;
 }
 	@media (max-width: 768px){
 	#abouttext {
@@ -148,7 +148,7 @@ a:hover{
 		grid-template-columns: 85%;
 		width: 90%;
 		margin: auto;
-		padding: 270px 0 170px 0;
+		padding: 270px 0 200px 0;
 	}
 }
 

@@ -1,5 +1,5 @@
-# haryoon.com
-My personal website
+<h1 align="center">Haryoon.com</h1>
 
-### Repository for Activities 9.1 and 9.2
-<a href="https://github.com/haryoon/PCDE-Activity-9.1" target="_blank"> link to PCDE-Activity 9.1 Repo</a>
+My personal website to showcase my technical projects and skills.
+
+The site was built using HTML, CSS, and vanilla JavaScript. I used Github Pages and Route 53 (AWS) for deployment.
